@@ -203,6 +203,12 @@ body {
   line-height: 78px;
 }
 
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
@@ -214,6 +220,18 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hotels-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
 }
 
 .hotels-card-title {
@@ -235,6 +253,10 @@ body {
 .hotels-card-rating {
   color: #333333;
   background-color: #f2f2f2;
+}
+
+.pagination {
+  list-style: none;
 }
 
 .pagination-link {
