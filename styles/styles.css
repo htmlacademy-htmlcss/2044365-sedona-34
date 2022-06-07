@@ -250,6 +250,11 @@ body {
   background-repeat: no-repeat;
 }
 
+.inner-header {
+   width: 1060px;
+   margin: 0 auto;
+}
+
 .inner-header-title {
   font-weight: 700;
   font-size: 60px;
@@ -260,6 +265,37 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.catalog-hotels-container {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.catalog-filter {
+   display: flex;
+   width: 1060px;
+}
+
+.catalog-filter-group-infrastructure {
+   width: 151px;
+   margin-right: 70px;
+}
+
+.catalog-filter-group-type {
+   width: 146px;
+   margin-right: 175px;
+}
+
+.catalog-filter-group-price {
+   width: 288px;
+   margin-right: 70px;
+}
+
+.catalog-filter-group-button {
+   width: 161px;
+   margin-left: auto;
 }
 
 .catalog-filter-title {
