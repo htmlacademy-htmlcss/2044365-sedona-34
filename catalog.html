@@ -180,30 +180,32 @@
         </div>
 
         <section class="catalog-cards">
-          <h2 class="visually-hidden">Тип фильтрации</h2>
-          <span class="inner-title">Найдено гостиниц: 38</span>
-          <select class="select-control" aria-label="Сортировка">
-            <option value="cheap">Сначала дешёвые</option>
-            <option value="popular">Сначала популярные</option>
-            <option value="expensive">Сначала дорогие</option>
-          </select>
-          <ul class="filtration">
-            <li class="filtration-type">
-              <a class="button-filtr" href="#">
-                <span class="visually-hidden">Показать карточки</span>
-              </a>
-            </li>
-            <li class="filtration-type">
-              <a class="button-filtr button-light" href="#">
-                <span class="visually-hidden">Показать слайдшоу</span>
-              </a>
-            </li>
-            <li class="filtration-type">
-              <a class="button-filtr button-light" href="#">
-                <span class="visually-hidden">Показать список</span>
-              </a>
-            </li>
-          </ul>
+          <div class="catalog-cards-wrapper">
+            <h2 class="visually-hidden">Тип фильтрации</h2>
+            <span class="inner-title">Найдено гостиниц: 38</span>
+            <select class="select-control" aria-label="Сортировка">
+              <option value="cheap">Сначала дешёвые</option>
+              <option value="popular">Сначала популярные</option>
+              <option value="expensive">Сначала дорогие</option>
+            </select>
+            <ul class="filtration">
+              <li class="filtration-type">
+                <a class="button-filtr" href="#">
+                  <span class="visually-hidden">Показать карточки</span>
+                </a>
+              </li>
+              <li class="filtration-type">
+                <a class="button-filtr button-light" href="#">
+                  <span class="visually-hidden">Показать слайдшоу</span>
+                </a>
+              </li>
+              <li class="filtration-type">
+                <a class="button-filtr button-light" href="#">
+                  <span class="visually-hidden">Показать список</span>
+                </a>
+              </li>
+            </ul>
+          </div>
 
           <ul class="hotels-list">
             <li class="hotels-card">
@@ -283,32 +285,36 @@
             </li>
           </ul>
 
-          <ul class="pagination">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <span>...</span>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">10</a>
-            </li>
-          </ul>
-          <span class="hotels-amount">Гостиниц на странице:</span>
-          <select class="select-control" aria-label="Сортировка">
-            <option value="minimum">4</option>
-            <option value="standart">6</option>
-            <option value="maximum">8</option>
-          </select>
+          <div class="pagination-container">
+            <ul class="pagination">
+              <li class="pagination-item">
+                <a class="pagination-link pagination-current">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                <span>...</span>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">10</a>
+              </li>
+            </ul>
+            <div class="select-wrapper">
+              <span class="hotels-amount">Гостиниц на странице:</span>
+              <select class="select-pagination" aria-label="Сортировка">
+                <option value="minimum">4</option>
+                <option value="standart">6</option>
+                <option value="maximum">8</option>
+              </select>
+            </div>
+          </div>
         </section>
 
         <section class="subscription-inner">

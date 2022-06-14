@@ -102,6 +102,7 @@ body {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 410px;
@@ -125,6 +126,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
+  padding-right: 34px;
   text-align: center;
   text-decoration: none;
   color: #000000;
@@ -186,6 +188,10 @@ body {
 
 .advantages-title {
   margin: 0 0 30px 0;
+}
+
+.advantages-photo {
+  display: block;
 }
 
 .main-title {
@@ -283,6 +289,7 @@ body {
   width: 150px;
   margin: 0;
   display: flex;
+  list-style: none;
 }
 
 .footer-contacts-phone {
@@ -321,15 +328,38 @@ body {
 }
 
 .breadcrumbs {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.breadcrumbs-link {
+  margin-right: 25px;
 }
 
 .catalog-hotels-container {
   display: flex;
   width: 1060px;
   margin: 0 auto;
+}
+
+.catalog-cards-wrapper {
+  display: flex;
+  padding: 50px 72px 56px 72px;
+}
+
+.filtration {
+  display: flex;
+  margin: 0;
+}
+
+.inner-title {
+  margin-right: 191px;
+}
+
+.select-control {
+  margin-right: 78px;
 }
 
 .catalog-filter {
@@ -393,14 +423,27 @@ body {
   background-color: #f2f2f2;
 }
 
+.pagination-container {
+  display: flex;
+  padding: 30px 71px 25px 73px;
+}
+
 .pagination {
   list-style: none;
   display: flex;
   margin: 0;
-  padding: 30px 71px 25px 73px;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 11px 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -413,6 +456,10 @@ body {
 .pagination-current {
   color: #000000;
   background-color: #f2f2f2;
+}
+
+.select-wrapper {
+  margin-left: auto;
 }
 
 .subscription-inner {
