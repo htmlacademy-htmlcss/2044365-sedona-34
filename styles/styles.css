@@ -83,13 +83,10 @@ body {
 }
 
 .button-header {
-  position: absolute;
-  top: 14px;
-  right: 70px;
   min-width: 160px;
   padding: 8px 15px;
-  align-self: start;
   border-radius: 4px;
+  margin-left: 18px;
 }
 
 .button-header:hover {
@@ -259,6 +256,10 @@ body {
   background-color: #e5e5e5;
 }
 
+.page-header {
+  z-index: 1;
+}
+
 .navigation {
   display: flex;
   position: relative;
@@ -278,28 +279,44 @@ body {
   margin-left: 17px;
 }
 
+.navigation-link-active {
+  position: relative;
+}
+
+.navigation-link-active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #756257;
+  bottom: 0;
+  left: 0;
+}
+
 .navigation-user {
   display: flex;
-  min-width: 265px;
+  flex-wrap: wrap;
+  align-items: center;
   margin-left: auto;
+  transform: translateY(-10px);
 }
 
 .navigation-link-user {
   display: flex;
+  position: relative;
   text-decoration: none;
-  padding: 3px 0 0 11px;
-  margin-right: 12px;
+  padding: 3px 12px 0 11px;
 }
 
-.navigation-link-user::after {
+.navigation-link-user-basket::after {
   position: absolute;
   content: "";
   background-image: url("../images/number.svg");
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
-  top: 15px;
-  right: 247px;
+  top: -5px;
+  right: 0;
 }
 
 .navigation-logo {
@@ -602,7 +619,8 @@ body {
   background-image: url("../images/catalog/background-catalog.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 35px 72px 86px 71px;
+  min-height: 403px;
+  padding: 35px 72px 66px 71px;
 }
 
 .inner-header {
@@ -625,7 +643,24 @@ body {
 }
 
 .breadcrumbs-link {
+  position: relative;
   margin-right: 25px;
+}
+
+.breadcrumbs-link::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/arrow.svg");
+  background-size: cover;
+  width: 6px;
+  height: 9px;
+  top: 50%;
+  right: -15px;
+  transform: translateY(-50%);
+}
+
+.breadcrumbs-link-current::before {
+  display: none;
 }
 
 .filtration {
@@ -729,7 +764,7 @@ body {
 }
 
 .catalog-cards {
-  padding: 57px 73px 23px 73px;
+  padding: 49px 73px 23px 73px;
 }
 
 .catalog-cards-wrapper {
@@ -742,7 +777,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   list-style: none;
   margin: 0 0 30px 0;
-  padding: 0 0 86px 0;
+  padding: 0 0 66px 0;
   gap: 0 18px;
   border-bottom: 1px solid #e6e6e6;
 }
@@ -788,6 +823,9 @@ body {
   background-color: #f2f2f2;
   padding: 8px 22px;
   border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .hotels-star-rating {
@@ -808,6 +846,7 @@ body {
 
 .pagination-container {
   display: flex;
+  align-items: center;
 }
 
 .pagination {
@@ -878,6 +917,3 @@ body {
   padding: 94px 200px;
 }
 
-.navigation-link-active {
-  border-bottom: 2px solid #756257;
-}
