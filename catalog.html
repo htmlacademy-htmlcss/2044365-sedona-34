@@ -101,7 +101,6 @@
                       fill-rule="evenodd"
                       clip-rule="evenodd"
                       d="M0.15625 6.1499L6.15625 0.649902L12.1562 6.1499V12.3499H0.15625V6.1499ZM1.15625 6.5499V11.3499H11.1562V6.5499L6.15625 2.0499L1.15625 6.5499ZM5.15625 10.3499H4.15625V6.84985H8.15625V10.3499H7.15625V7.84985H5.15625V10.3499Z"
-                      fill="white"
                     />
                   </svg>
                   <span class="visually-hidden">Главная</span>
@@ -219,7 +218,7 @@
                       name="type-of-house"
                       value="0"
                     />
-                    от
+                    <span>от</span>
                   </label>
                   <label class="control-price">
                     <input
@@ -228,13 +227,19 @@
                       name="type-of-house"
                       value="9000"
                     />
-                    до
+                    <span>до</span>
                   </label>
                 </div>
                 <div class="range-scale">
                   <div class="range-bar" style="width: 228px">
-                    <button class="range-toggle toggle-min"></button>
-                    <button class="range-toggle toggle-max"></button>
+                    <button
+                      class="range-toggle toggle-min"
+                      type="button"
+                    ></button>
+                    <button
+                      class="range-toggle toggle-max"
+                      type="button"
+                    ></button>
                   </div>
                 </div>
               </fieldset>
