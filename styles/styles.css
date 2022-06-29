@@ -903,13 +903,17 @@ body {
 .catalog-filter {
   display: grid;
   grid-template-columns: 150px 150px 1fr 160px;
-  gap: 67px;
+  gap: 69px;
 }
 
 .catalog-filter-group {
   margin: 0;
   padding: 0;
   border: none;
+}
+
+.catalog-filter-group:nth-child(3) {
+  padding-left: 103px;
 }
 
 .catalog-filter-group-button {
@@ -940,7 +944,7 @@ body {
 }
 
 .catalog-cards {
-  padding: 49px 73px 23px 73px;
+  padding: 53px 73px 23px 73px;
 }
 
 .catalog-cards-wrapper {
@@ -1079,6 +1083,8 @@ body {
 
 .select-pagination {
   min-width: 160px;
+  font-size: 18px;
+  line-height: 21px;
   padding: 14px 20px;
   border-radius: 4px;
   border: 2px solid #e5e5e5;
