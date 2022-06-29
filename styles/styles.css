@@ -718,6 +718,24 @@ body {
   border-radius: 50%;
 }
 
+.control-wrapper {
+  position: relative;
+  display: flex;
+}
+
+.control-input-price {
+  width: 144px;
+  color: #ffffff;
+  background-color: transparent;
+  padding: 14px;
+  border: 2px solid #ffffff;
+  margin-bottom: 32px;
+}
+
+.control-price {
+
+}
+
 .range-scale {
   position: relative;
   width: 288px;
