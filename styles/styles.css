@@ -1166,6 +1166,19 @@ body {
   cursor: pointer;
 }
 
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.modal-close-button:active {
+  background-color: #E6E6E6;
+  outline: none;
+}
+
 .modal-wrapper {
   display: grid;
   gap: 11px 0;
@@ -1186,6 +1199,20 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
+}
+
+.date-text:hover {
+  background-color: #e6e6e6;
+}
+
+.date-text:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
+.date-text:not(:placeholder-shown) {
+  background-color: #ffffff;
+  outline: 2px solid #000000;
 }
 
 .date-button {
@@ -1290,4 +1317,17 @@ body {
   background-color: #83b3d3;
   border-radius: 10px;
   padding: 12px 26px;
+}
+
+.modal-search:hover {
+  background-color: #68A2CA;
+}
+
+.modal-search:focus {
+background-color: #68A2CA;
+outline: 3px solid #756257;
+}
+
+.modal-search:active {
+  color: rgba(255, 255, 255, 0.3);
 }
