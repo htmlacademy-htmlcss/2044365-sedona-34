@@ -54,7 +54,10 @@
               </svg>
               <span class="visually-hidden">Поиск</span>
             </a>
-            <a class="navigation-link-user navigation-link-user-basket" href="#">
+            <a
+              class="navigation-link-user navigation-link-user-basket"
+              href="#"
+            >
               <svg
                 class="navigation-icon"
                 aria-hidden="true"
@@ -349,6 +352,99 @@
           <span class="visually-hidden">htmlacademy</span>
         </a>
       </footer>
+    </div>
+    <div class="modal-container">
+      <div class="modal modal-auth">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <form
+          class="modal-content"
+          action="https://echo.htmlacademy.ru/"
+          method="post"
+        >
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <div class="modal-wrapper">
+            <label class="label-date arrival-date" for="arrival"
+              >Дата заезда:</label
+            >
+            <input
+              class="date-text"
+              id="arrival"
+              type="text"
+              placeholder="27 апреля 2020"
+            />
+            <button class="date-button" type="button">
+              <span class="visually-hidden">Календарь</span>
+            </button>
+            <p class="date-text-error">Мы не можем отправить вас в прошлое.</p>
+          </div>
+          <div class="modal-wrapper">
+            <label class="label-date departure-date" for="departure"
+              >Дата выезда:</label
+            >
+            <input
+              class="date-text"
+              id="departure"
+              type="text"
+              placeholder="1 сентября 2021"
+            />
+            <button class="date-button" type="button">
+              <span class="visually-hidden">Календарь</span>
+            </button>
+            <p class="date-text-received">
+              На эти даты есть свободные номера. Пока есть.
+            </p>
+          </div>
+
+          <div class="field-wrapper">
+            <label class="label-date field-label" for="adult">Взрослые:</label>
+            <div class="field-box">
+              <button class="field-button button-minus" type="button">
+                <svg class="modal-icon" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z"/>
+                  </svg>
+                <span class="visually-hidden">Минус</span>
+              </button>
+              <input
+                class="field-number"
+                id="adult"
+                type="text"
+                placeholder="2"
+              />
+              <button class="field-button button-plus" type="button">
+                <svg class="modal-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
+                  </svg>
+                <span class="visually-hidden">Плюс</span>
+              </button>
+            </div>
+            <label class="label-date field-label" for="children">Дети:</label>
+            <div class="field-box">
+              <button class="field-button button-minus" type="button">
+                <svg class="modal-icon" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z"/>
+                  </svg>
+                <span class="visually-hidden">Минус</span>
+              </button>
+              <input
+                class="field-number"
+                id="children"
+                type="text"
+                placeholder="1"
+              />
+              <button class="field-button button-plus" type="button">
+                <svg class="modal-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
+                  </svg>
+                <span class="visually-hidden">Плюс</span>
+              </button>
+            </div>
+              <a class="modal-search" href="#">Найти</a>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>
