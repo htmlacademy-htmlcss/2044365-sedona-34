@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/svg+xml">
   </head>
   <body>
     <div class="page-wrapper">
@@ -353,8 +354,11 @@
         </a>
       </footer>
     </div>
-    <div class="modal-container">
-      <div class="modal modal-auth">
+
+    <!-- Для открытия модального окна нужно в <div class="modal-container"> добавить класс "is-open" -->
+
+    <div class="modal-container is-open">
+      <div class="modal">
         <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
@@ -364,7 +368,10 @@
           method="post"
         >
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-          <div class="modal-wrapper">
+
+<!-- Для того чтобы, появилось сообщение об ошибке <div class="input-wrapper> нужно добавить класс "is-invalid" -->
+
+          <div class="input-wrapper is-invalid">
             <label class="label-date arrival-date" for="arrival"
               >Дата заезда:</label
             >
@@ -379,7 +386,10 @@
             </button>
             <p class="date-text-error">Мы не можем отправить вас в прошлое.</p>
           </div>
-          <div class="modal-wrapper">
+
+<!-- Для того чтобы, появилось корректное сообщение  <div class="input-wrapper> надо добавить класс "is-valid"  -->
+
+          <div class="input-wrapper is-valid">
             <label class="label-date departure-date" for="departure"
               >Дата выезда:</label
             >
@@ -401,9 +411,6 @@
             <label class="label-date field-label" for="adult">Взрослые:</label>
             <div class="field-box">
               <button class="field-button button-minus" type="button">
-                <svg class="modal-icon" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z"/>
-                  </svg>
                 <span class="visually-hidden">Минус</span>
               </button>
               <input
@@ -413,18 +420,12 @@
                 placeholder="2"
               />
               <button class="field-button button-plus" type="button">
-                <svg class="modal-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
-                  </svg>
                 <span class="visually-hidden">Плюс</span>
               </button>
             </div>
             <label class="label-date field-label" for="children">Дети:</label>
             <div class="field-box">
               <button class="field-button button-minus" type="button">
-                <svg class="modal-icon" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z"/>
-                  </svg>
                 <span class="visually-hidden">Минус</span>
               </button>
               <input
@@ -434,9 +435,6 @@
                 placeholder="1"
               />
               <button class="field-button button-plus" type="button">
-                <svg class="modal-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
-                  </svg>
                 <span class="visually-hidden">Плюс</span>
               </button>
             </div>
