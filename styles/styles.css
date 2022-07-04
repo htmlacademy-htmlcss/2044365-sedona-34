@@ -560,7 +560,7 @@ body {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  padding: 20px 20px 20px 20px;
+  padding: 23px 20px 20px 20px;
   flex-grow: 1;
   border: none;
   border-radius: 10px 0 0 10px;
@@ -969,6 +969,7 @@ body {
 
 .catalog-cards-wrapper {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 56px;
 }
 
@@ -1172,6 +1173,7 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  text-transform: uppercase;
   margin: 0 0 63px 0;
 }
 
@@ -1226,6 +1228,7 @@ body {
   background-color: #f2f2f2;
   border-radius: 4px;
   border: none;
+  min-height: 50px;
 }
 
 .date-text::placeholder {
@@ -1270,7 +1273,7 @@ body {
   line-height: 21px;
   display: none;
   position: absolute;
-  top: 55px;
+  top: 56px;
 }
 
 .date-text-received {
@@ -1281,7 +1284,7 @@ body {
   color: #333333;
   display: none;
   position: absolute;
-  top: 55px;
+  top: 56px;
 }
 
 .label-date {
@@ -1308,12 +1311,12 @@ body {
 }
 
 .input-box-wrapper {
-  width: 133px;
   position: relative;
 }
 
 .field-number {
   width: 133px;
+  min-height: 50px;
   padding: 15px 40px 14px 40px;
   background-color: #f2f2f2;
   border-radius: 4px;
@@ -1342,8 +1345,8 @@ body {
   cursor: pointer;
   background: transparent;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 45%;
+  transform: translateY(-45%);
   border-radius: 4px;
   outline: none;
 }
@@ -1366,7 +1369,7 @@ body {
 }
 
 .button-minus {
-  left: 19px;
+  left: 14px;
 }
 
 .button-minus::after {
@@ -1374,7 +1377,7 @@ body {
 }
 
 .button-plus {
-  right: 19px;
+  right: 14px;
 }
 
 .field-button:hover::before,
@@ -1428,7 +1431,7 @@ body {
   position: absolute;
   z-index: 1;
   left: 110px;
-  top: 10px;
+  top: 14px;
 }
 
 .tooltip-button {
