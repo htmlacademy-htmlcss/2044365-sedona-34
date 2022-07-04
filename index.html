@@ -407,9 +407,10 @@
             </p>
           </div>
 
-          <div class="field-wrapper">
-            <label class="label-date field-label" for="adult">Взрослые:</label>
+          <div class="field-box-wrapper">
             <div class="field-box">
+              <label class="label-date field-label-adult" for="adult">Взрослые:</label>
+              <div class="input-box-wrapper">
               <button class="field-button button-minus" type="button">
                 <span class="visually-hidden">Минус</span>
               </button>
@@ -422,9 +423,15 @@
               <button class="field-button button-plus" type="button">
                 <span class="visually-hidden">Плюс</span>
               </button>
+              </div>
             </div>
-            <label class="label-date field-label" for="children">Дети:</label>
             <div class="field-box">
+              <label class="label-date field-label-children" for="children">Дети:</label>
+              <div class="tooltip">
+                <button class="tooltip-button" type="button"></button>
+                <span class="tooltip-content" role="tooltip" id="tooltip-children">Укажите количество детей, которые будут с&nbsp;вами, возраст которых от&nbsp;6 до 18&nbsp;лет. Дети до&nbsp;6&nbsp;лет размещаются бесплатно.</span>
+              </div>
+              <div class="input-box-wrapper">
               <button class="field-button button-minus" type="button">
                 <span class="visually-hidden">Минус</span>
               </button>
@@ -437,9 +444,10 @@
               <button class="field-button button-plus" type="button">
                 <span class="visually-hidden">Плюс</span>
               </button>
+              </div>
             </div>
-              <a class="modal-search" href="#">Найти</a>
             </div>
+            <a class="modal-search" href="#">Найти</a>
           </div>
         </form>
       </div>
