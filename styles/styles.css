@@ -582,6 +582,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
 }
 
@@ -605,7 +606,8 @@ body {
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   margin: 0 34px;
 }
 
@@ -658,6 +660,7 @@ body {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 0 40px 0;
   padding: 0;
   list-style: none;
@@ -856,10 +859,10 @@ body {
 
 .filtration {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
-  align-self: center;
 }
 
 .inner-title {
@@ -970,6 +973,7 @@ body {
 .catalog-cards-wrapper {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   margin-bottom: 56px;
 }
 
@@ -1143,6 +1147,10 @@ body {
 .subscription-inner {
   text-align: center;
   padding: 94px 200px;
+}
+
+.subscription-subtitle-catalog {
+  color: #333333;
 }
 
 .modal-container {
