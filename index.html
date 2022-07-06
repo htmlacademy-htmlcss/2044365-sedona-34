@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Седона</title>
-    <link rel="icon" href="/images/favicon.ico" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
@@ -78,7 +79,6 @@
           </div>
         </nav>
       </header>
-
       <main class="main-index">
         <section class="intro">
           <h1 class="visually-hidden">Седона</h1>
@@ -98,7 +98,6 @@
           <p class="main-subtitle">
             Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
           </p>
-
           <div class="advantages-card">
             <div class="advantages-card-wrapper">
               <h3 class="advantages-title">Настоящий городок</h3>
@@ -117,7 +116,6 @@
               alt="Городок Седона."
             />
           </div>
-
           <ul class="advantages-list">
             <li class="advantages-item advantages-icon-home">
               <h3 class="advantages-title">Жильё</h3>
@@ -159,7 +157,6 @@
               </p>
             </div>
           </div>
-
           <ul class="advantages-list advantages-list-modify">
             <li class="advantages-item">
               <h3 class="advantages-title">Небольшая площадь</h3>
@@ -196,7 +193,6 @@
             </li>
           </ul>
         </section>
-
         <section class="search">
           <h2 class="search-title">Заинтересовались?</h2>
           <p class="search-subtitle">
@@ -205,7 +201,6 @@
           </p>
           <a class="button button-search" href="#">Поиск гостиниц в седоне</a>
         </section>
-
         <section class="subscription">
           <h2 class="subscription-title">Подпишитесь на рассылку</h2>
           <p class="subscription-subtitle">
@@ -220,6 +215,7 @@
             <input
               class="field"
               placeholder="Ваш e-mail"
+              aria-label="Ваш e-mail"
               type="email"
               name="subscription-email"
               required
@@ -230,7 +226,6 @@
           </form>
         </section>
       </main>
-
       <footer class="page-footer">
         <ul class="footer-social-list">
           <li class="footer-social-item">
@@ -270,7 +265,6 @@
                   d="M16.785 0.0992597L0.840489 6.24776C-0.247661 6.68481 -0.241365 7.29184 0.640845 7.56253L4.73445 8.83953L14.2058 2.8637C14.6537 2.59121 15.0629 2.7378 14.7265 3.03636L7.05283 9.96185H7.05103L7.05283 9.96275L6.77045 14.1823C7.18413 14.1823 7.36669 13.9925 7.59871 13.7686L9.58705 11.8351L13.7229 14.89C14.4855 15.31 15.0332 15.0941 15.2229 14.1841L17.9379 1.38885C18.2158 0.274623 17.5126 -0.229883 16.785 0.0992597Z"
                 />
               </svg>
-
               <span class="visually-hidden">Телеграмм</span>
             </a>
           </li>
@@ -293,7 +287,6 @@
                   d="M18.9402 0.5H3.50738C1.64668 0.5 0.333252 2.09375 0.333252 3.9V13.9937C0.333252 15.9062 1.64668 17.5 3.50738 17.5H19.1591C20.8009 17.5 22.3333 15.9062 22.3333 14.1V3.9C22.1143 2.09375 20.8009 0.5 18.9402 0.5ZM7.99494 13.0375V4.9625L15.3283 9L7.99494 13.0375Z"
                 />
               </svg>
-
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
@@ -347,14 +340,11 @@
               d="M109.4 27L105.8 18.1H103.6L108.4 29.7C108.1 30.6 107.7 30.9 106.7 30.9H104.2V32.9H106.7C108.5 32.9 109.5 32.1 110.2 30.3L114.9 18.1H112.8L109.4 27Z"
             />
           </svg>
-
           <span class="visually-hidden">htmlacademy</span>
         </a>
       </footer>
     </div>
-
     <!-- Для открытия модального окна нужно в <div class="modal-container"> добавить класс "is-open" -->
-
     <div class="modal-container">
       <div class="modal">
         <button class="modal-close-button" type="button">
@@ -366,9 +356,7 @@
           method="post"
         >
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-
           <!-- Для того чтобы, появилось сообщение об ошибке <div class="input-wrapper> нужно добавить класс "is-invalid" -->
-
           <div class="input-wrapper is-invalid">
             <label class="label-date arrival-date" for="arrival"
               >Дата Заезда:</label
@@ -386,9 +374,7 @@
             </button>
             <p class="date-text-error">Мы не можем отправить вас в прошлое.</p>
           </div>
-
           <!-- Для того чтобы, появилось корректное сообщение  <div class="input-wrapper> надо добавить класс "is-valid"  -->
-
           <div class="input-wrapper is-valid">
             <label class="label-date departure-date" for="departure"
               >Дата Выезда:</label
@@ -408,7 +394,6 @@
               На эти даты есть свободные номера. Пока есть.
             </p>
           </div>
-
           <div class="field-box-wrapper">
             <div class="field-box">
               <label class="label-date field-label-adult" for="adult"

@@ -21,24 +21,18 @@
 }
 
 img {
-  display: block;
   max-width: 100%;
-  height: auto;
 }
 
 .visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   padding: 0;
   overflow: hidden;
-
   white-space: nowrap;
-
   border: 0;
-
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
 }
@@ -56,6 +50,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f2f2f2;
+  min-width: 1280px;
 }
 
 .page-wrapper {
@@ -83,7 +78,7 @@ body {
 }
 
 .button-header {
-  min-width: 160px;
+  width: 160px;
   padding: 8px 15px;
   border-radius: 4px;
   margin-left: 18px;
@@ -270,14 +265,10 @@ body {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 0 0 0 17px;
   padding: 0;
   width: 410px;
   list-style: none;
-}
-
-.navigation-item:first-child {
-  margin-left: 17px;
 }
 
 .navigation-link-active {
@@ -365,12 +356,15 @@ body {
 
 .intro {
   background-image: url("../images/index-background.jpg");
+  background-color: #3f5e72;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   padding: 51px 100px 80px 100px;
   position: relative;
+  flex-direction: column;
+  align-items: center;
 }
 
 .intro::before {
@@ -453,7 +447,8 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0 0 31px 0;
+  margin: 0 auto 31px auto;
+  width: 655px;
 }
 
 .main-subtitle {
@@ -461,7 +456,8 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
-  margin: 0 0 90px 0;
+  margin: 0 auto 90px auto;
+  width: 655px;
 }
 
 .advantages-item::before {
@@ -533,6 +529,7 @@ body {
   text-align: center;
   color: #ffffff;
   background-image: url("../images/subscription.jpg");
+  background-color: #3f5e72;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 94px 200px;
@@ -570,7 +567,8 @@ body {
 .page-footer {
   display: flex;
   margin-top: auto;
-  padding: 45px 70px 30px 70px;
+  padding: 43px 70px 30px 70px;
+  align-items: center;
 }
 
 .footer-social-item {
@@ -602,13 +600,12 @@ body {
   font-size: 40px;
   line-height: 40px;
   text-align: center;
-  width: 720px;
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
   display: flex;
-  justify-content: center;
-  margin: 0 34px;
+  margin-left: auto;
+  width: 331px;
 }
 
 .footer-contacts-phone:hover {
@@ -622,7 +619,6 @@ body {
 .htmlacademy-link {
   max-width: 120px;
   margin-left: auto;
-  align-self: center;
 }
 
 .htmlacademy-link-icon {
@@ -640,6 +636,7 @@ body {
 .inner-wrapper {
   color: #ffffff;
   background-image: url("../images/catalog/background-catalog.jpg");
+  background-color: #3f5e72;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 403px;
@@ -858,11 +855,13 @@ body {
 }
 
 .filtration {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 8px;
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 160px;
 }
 
 .inner-title {
@@ -875,7 +874,7 @@ body {
 }
 
 .select-control {
-  margin-right: 78px;
+  margin: 0 78px 0 20px;
   min-width: 290px;
   padding: 14px 20px;
   border: 2px solid #e5e5e5;
@@ -888,9 +887,10 @@ body {
   background-repeat: no-repeat;
   background-position: right 21px center;
   appearance: none;
+  background-color: #ffffff;
 }
 
-.button-filtr {
+.button-filtration {
   display: inline-block;
   width: 48px;
   height: 48px;
@@ -903,23 +903,19 @@ body {
   border: 2px solid #e5e5e5;
 }
 
-.filtration-type:not(:last-child) {
-  margin-right: 8px;
-}
-
 .filtration-icon {
   fill: #000000;
 }
 
-.button-filtr:hover {
+.button-filtration:hover {
   outline: 2px solid #000000;
 }
 
-.button-filtr:focus {
+.button-filtration:focus {
   outline: 2px solid #68a2ca;
 }
 
-.button-filtr:active {
+.button-filtration:active {
   outline: 2px solid #000000;
 }
 
@@ -973,6 +969,7 @@ body {
 .catalog-cards-wrapper {
   display: flex;
   flex-wrap: wrap;
+  width: 1057px;
   align-items: center;
   margin-bottom: 56px;
 }
@@ -991,13 +988,17 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 140px);
   gap: 16px 20px;
+  margin-top: auto;
 }
 
 .hotels-card {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
 }
 
 .hotels-card-image {
+  display: block;
   margin-bottom: 16px;
 }
 
@@ -1037,7 +1038,7 @@ body {
   background-image: url("../images/catalog/star.svg");
   align-self: center;
   background-repeat: space;
-  width: 85px;
+  width: 87px;
   height: 17px;
 }
 
@@ -1046,7 +1047,7 @@ body {
 }
 
 .star-two {
-  width: 45px;
+  width: 42px;
 }
 
 .pagination-container {
@@ -1056,13 +1057,11 @@ body {
 
 .pagination {
   list-style: none;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 0 8px;
   margin: 0;
   padding: 0;
-}
-
-.pagination-item:not(:last-child) {
-  margin-right: 8px;
 }
 
 .pagination-link {
@@ -1117,6 +1116,7 @@ body {
   background-repeat: no-repeat;
   background-position: right 21px center;
   appearance: none;
+  background-color: #ffffff;
 }
 
 .select-control:hover,
@@ -1477,10 +1477,10 @@ body {
   background-image: url("../images/tooltip-arrow.svg");
   width: 19px;
   height: 9px;
-  position:absolute;
+  position: absolute;
   bottom: 99%;
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
   margin-left: auto;
   margin-right: auto;
 }
