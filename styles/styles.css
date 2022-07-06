@@ -237,6 +237,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .button-more:hover {
@@ -605,7 +606,7 @@ body {
   text-decoration: none;
   display: flex;
   margin-left: auto;
-  width: 331px;
+  width: 333px;
 }
 
 .footer-contacts-phone:hover {
@@ -668,6 +669,8 @@ body {
   margin-right: 25px;
   font-size: 16px;
   cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .breadcrumbs-link::before {
@@ -758,6 +761,7 @@ body {
 .control-wrapper {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 32px;
 }
 
@@ -887,6 +891,7 @@ body {
   background-repeat: no-repeat;
   background-position: right 21px center;
   appearance: none;
+  -moz-appearance: none;
   background-color: #ffffff;
 }
 
@@ -941,7 +946,7 @@ body {
   align-items: center;
   width: 161px;
   margin-left: auto;
-  align-self: flex-end;
+  padding-top: 60px;
 }
 
 .catalog-filter-title {
@@ -1116,6 +1121,7 @@ body {
   background-repeat: no-repeat;
   background-position: right 21px center;
   appearance: none;
+  -moz-appearance: none;
   background-color: #ffffff;
 }
 
@@ -1436,10 +1442,12 @@ body {
 }
 
 .tooltip {
+  display: flex;
   position: absolute;
   z-index: 1;
   left: 110px;
-  top: 14px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .tooltip-button {
@@ -1488,4 +1496,14 @@ body {
 .tooltip-button:hover + .tooltip-content,
 .tooltip-button:focus + .tooltip-content {
   display: block;
+}
+
+.input-wrapper input::placeholder,
+.input-wrapper input::-moz-placeholder {
+  opacity: 1;
+}
+
+.input-box-wrapper input::placeholder,
+.input-box-wrapper input::-moz-placeholder {
+  opacity: 1;
 }
